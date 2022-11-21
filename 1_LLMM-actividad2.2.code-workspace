@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../Visual Studio T2/Receta"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "1_LLMM-actividad2.2"
+  }
+}

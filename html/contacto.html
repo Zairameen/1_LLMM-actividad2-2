@@ -1,5 +1,48 @@
-<!-- Página con un formulario de contacto -->
-<!-- h1 -->
-<!-- p -->
-<!-- Enlaces a index, ingredientes, pasos y contacto -->
-<!-- formulario: nombre, email, seleccionar entre consulta/sugerencia/corrección, comentario, aceptar política de privacidad, enviar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(226, 226, 166);
+            font-size: medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table border="3" bordercolor="orange" cellpadding="18" cellspacing="15">
+        <tr>
+            <th><a href="./index.html">Página principal</a></th>
+            <th><a href="./ingredientes.html">Página de ingredientes</a></th>
+            <th><a href="./pasos.html">Página de elaboración</a></th>
+            <th><a href="./contacto.html">Página de contacto</a></th>
+        </tr>
+    </table> <br><br><br>
+
+    <h1 style="text-align: center ;">CONTACTO</h1>
+    <br>
+        <label for="nombre"> Nombre: </label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br> <br>
+        <label for="email"> Mail: </label><br>
+        <input type="email" id="email" placeholder="email@email.com"> <br><br>
+
+        <label for="opciones">Escoge una de las siguientes opciones:</label>
+        <select id="opciones" name="opciones">
+            <option value="Consulta">Consulta</option>
+            <option value="Sugerencias">Sugerencias</option>
+            <option value="Corrección">Corrección</option>
+        </select> <br><br>
+        <textarea name="comentario" rows="5" cols="30">Escribe aquí el comentario:
+        </textarea><br><br>
+        <form>
+            <input type="checkbox" id="poli_priv" name="poli_priv" value="poli_priv">
+            <label for="poli_priv"> Política de privacidad</label><br>
+        </form>
+        <br>
+        <button type="button" onclick="Enviar">Enviar</button>
+</body>
+</html>
